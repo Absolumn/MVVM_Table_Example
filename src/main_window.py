@@ -13,7 +13,6 @@ app = QApplication(sys.argv)
 class TableExample(QMainWindow):
     def __init__(self, model:CustomTableItemModel):
         super().__init__()  #Must initialize base class
-        self.setWindowTitle('Table Example')
         self.ui = Ui_TableExample()  #Connect the ui python file
         self.ui.setupUi(self)  #Create all the ui attributes
         table = self.ui.tbl_example
@@ -22,3 +21,4 @@ class TableExample(QMainWindow):
         table.horizontalHeader().setSectionResizeMode(0, QHeaderView.Stretch) #Allows column 0 to stretch to window size
         self.ui.le_add_entry.editingFinished.connect(lambda: model.create_entry(self.ui.le_add_entry.text())) #Text Entry Binding
         self.ui.pb_delete_entry.clicked.connect(lambda: model.delete_entry(table.selectedIndexes())) #Delete Entries Binding
+        self.setWindowTitle('Table Example')
