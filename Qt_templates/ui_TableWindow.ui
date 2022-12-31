@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TableExample</class>
+ <widget class="QMainWindow" name="TableExample">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>715</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="wgt_table_example">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(40, 44, 52);
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="vlt_wgt_table_example">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>9</number>
+    </property>
+    <property name="bottomMargin">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frm_table_example">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>10000000</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+border-radius: 15px;
+background-color: rgb(45, 49, 58);
+}
+
+QFrame#frm_table_example{
+border: 2px solid;
+border-color: rgba(255, 255, 255, 0);
+border-top-color: rgba(199,126,52,255);
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="vlt_frm_table_example">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frm_table">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(48, 52, 63);
+border-top-right-radius: 12px;
+border-top-left-radius: 12px;
+border-bottom-right-radius: 12px;
+border-bottom-left-radius: 12px;
+
+
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="vlt_frm_table">
+          <item>
+           <widget class="QTableView" name="tbl_example">
+            <property name="styleSheet">
+             <string notr="true">QHeaderView::section {
+                background-color: rgb(48, 52, 63);
+                color: rgb(92, 101, 118);
+                border: none;
+                font-size: 9pt;
+                }
+
+QTableView {
+                
+                gridline-color: rgb(48, 52, 63);
+                font-size: 8pt;
+	            }
+
+QTableView::item {
+    	        color:  rgb(171, 178, 191);
+				border-bottom: 1px solid rgba(92, 101, 118, 100);
+	            }
+                
+
+QTableView QTableCornerButton::section {
+                background-color: rgb(48, 52, 63);
+                border: 1px solid #fffff8;
+                border: none;
+                }
+
+QTableView{
+                selection-background-color: rgb(40, 44, 52);
+                selection-color: rgb(171, 178, 191);
+                }
+
+QScrollBar:horizontal {
+                border: none;
+                background:   rgb(48, 52, 63);
+                height: 18px;
+                margin: 0 25px 0 25px;
+                border-radius: 7px;
+                }
+QScrollBar::handle:horizontal {
+                background: rgb(57, 62, 74);
+                min-width: 25px;
+                border-radius: 7px
+                }
+QScrollBar::handle:horizontal:hover {	
+                background: rgb(0, 119, 160);
+                min-width: 25px;
+                border-radius: 7px
+                }
+QScrollBar::add-line:horizontal {
+                border-left: 0px solid rgb(40, 44, 52);
+                background:  rgb(57, 62, 74);
+                width: 23px;
+                padding: 0px;
+                border-top-right-radius: 7px;
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                subcontrol-position: right;
+                subcontrol-origin: margin;
+                }
+QScrollBar::sub-line:horizontal {
+                border-right: 0px solid rgb(40, 44, 52);
+                background:  rgb(57, 62, 74);
+                width: 23px;
+                padding: 0px;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                subcontrol-position: left;
+                subcontrol-origin: margin;
+}
+ QScrollBar::add-line:horizontal:hover,  QScrollBar::sub-line:horizontal:hover {
+
+	            background: rgb(0, 119, 160);
+
+                }
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+                background: none;
+                }
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+                background: none;
+                }
+QScrollBar:vertical {
+                border: none;
+                background:   rgb(48, 52, 63);
+                width: 18px;
+                margin: 25px 0px 25px 0px;
+                border-radius: 7px;
+                }
+
+QScrollBar::handle:vertical {	
+                background: rgb(57, 62, 74);
+                min-height: 25px;
+                border-radius: 7px
+                }
+QScrollBar::handle:vertical:hover {	
+                background: rgb(0, 119, 160);
+                min-height: 25px;
+                border-radius: 7px
+                }
+ QScrollBar::add-line:vertical {
+                border-top: 0px solid rgb(40, 44, 52);
+                background:  rgb(57, 62, 74);
+                height: 23px;
+                padding: 0px;
+                border-top-right-radius: 7px;
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                subcontrol-position: bottom;
+                subcontrol-origin: margin;
+                }
+ QScrollBar::add-line:vertical:hover,  QScrollBar::sub-line:vertical:hover {
+
+	            background: rgb(0, 119, 160);
+
+}
+ QScrollBar::sub-line:vertical {
+                border-bottom: 0px solid rgb(40, 44, 52);
+                background:  rgb(57, 62, 74);
+                height: 23px;
+                padding: 0px;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+                subcontrol-position: top;
+                subcontrol-origin: margin;
+                }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+                background: none;
+                }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+                background: none;
+                }</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="showDropIndicator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="showGrid">
+             <bool>false</bool>
+            </property>
+            <property name="cornerButtonEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="le_add_entry">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+                                background-color: rgb(33, 37, 43);
+                                border-radius: 5px;
+                                border: 2px solid rgb(33, 37, 43);
+                                padding-left: 5px;
+                                color:rgb(171, 178, 191);
+                                }
+
+</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="pb_delete_entry">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: rgb(0, 119, 160);
+border-bottom-right-radius: 8px;
+border-top-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-top-left-radius: 8px;
+border: 1px solid rgb(0,119,160);
+color: rgb(171, 178, 191)
+}
+
+QPushButton::Hover{
+background-color: rgb(0, 137, 183);
+}</string>
+         </property>
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
