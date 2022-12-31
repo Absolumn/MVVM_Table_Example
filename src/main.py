@@ -21,6 +21,4 @@ def main()-> None:
 
 
 if __name__ == '__main__':
-    myappid = u'Table.Example.VA' # arbitrary string
-    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
     main()
