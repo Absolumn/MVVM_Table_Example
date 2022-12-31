@@ -2,13 +2,16 @@
 
 A brief example of a MVVM Table view using PySide6 in Python.
 
+![Alt text](https://github.com/Absolumn/MVVM_Table_Example/blob/main/example.PNG?raw=true)
+
 ## Installation
+
+To install the required dependencies, run:
 ```
 pip install pyside6
 ```
 
-To install the required dependencies, including PySide6, run:
-
+To run the program, navigate to the root directory of the project and run:
 ```
 python main.py
 ```
