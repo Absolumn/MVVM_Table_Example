@@ -90,7 +90,7 @@ class CustomTableItemModel(QAbstractItemModel):
         super().__init__()
         self._root = root
 
-    def headerData(self, section: int, orientation:Qt.Orientation, role: int = ...) -> Any:
+    def headerData(self, section: int, orientation:Qt.Orientation, role:Enum) -> Any:
         '''
         Reimplemented Qt AbstractItemModel function
         
@@ -105,7 +105,7 @@ class CustomTableItemModel(QAbstractItemModel):
         else:
             return super().headerData(section, orientation, role)
 
-    def data(self, index:QModelIndex, role:Enum):
+    def data(self, index:QModelIndex, role:Enum)->Any:
         '''
         Reimplemented Qt AbstractItemModel function
         
