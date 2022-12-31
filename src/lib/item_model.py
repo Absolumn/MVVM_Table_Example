@@ -25,7 +25,7 @@ class TableNode:
             TableNode.add_root(self)
             self._children = []
         else:
-            parent.children.append(self)
+            parent.add_child(self)
 
     @classmethod
     def add_root(cls, root:Self):
