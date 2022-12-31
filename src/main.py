@@ -15,7 +15,7 @@ INITIAL_TEXT = [
 def main()-> None:
     model = item_model.build_table_item_model(INITIAL_TEXT)
     window = main_window.TableExample(model)
-    window.showNormal()
+    window.show()
     sys.exit(main_window.app.exec())
 
 
