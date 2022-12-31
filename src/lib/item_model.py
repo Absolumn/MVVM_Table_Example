@@ -10,9 +10,9 @@ class Node:
     text: str
 
 
-class TableNode(QObject):
+class TableNode:
     '''
-    Class for use in the TableView of the System model search results
+    Table model
     '''
     _root:ClassVar[Self]
 
@@ -83,6 +83,9 @@ class TableNode(QObject):
 
 
 class CustomTableItemModel(QAbstractItemModel):
+    '''
+    Table View Model
+    '''
     def __init__(self, root:TableNode):
         super().__init__()
         self._root = root
